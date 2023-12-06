@@ -1,0 +1,7 @@
+export TABLE_CONNECTION_STRING=https://afsfunction1jd.table.core.windows.net
+
+
+
+export AZURE_CLIENT_ID=53ae38ff-8f0a-4a08-a6b9-62329a86f9e5
+export AZURE_TENANT_ID=1a557139-8f66-46d5-91fb-6f23a01a305a
+export AZURE_CLIENT_SECRET=QZ48Q~pkaNxFlRxgeamk5toa-OcCRUE4zhmBXaUu

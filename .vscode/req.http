@@ -1,0 +1,30 @@
+#@baseUrl = http://localhost:7071/api
+
+#@baseUrl = https://afs-function1.azurewebsites.net/api/
+
+@baseUrl=https://afs-function1-apim.azure-api.net/afs-function1
+
+###
+get {{baseUrl}}/user
+
+###
+post {{baseUrl}}/user
+
+{
+          "id": "8",
+          "name": "Irina Pavelkowa",
+          "email": "ip@cz.cz"
+}
+
+###
+get {{baseUrl}}/user/2
+
+###
+post http://localhost:7071/runtime/webhooks/durabletask/orchestrators/on-boarding-orchestrator/
+
+    {
+        "id": "6"
+    }
+
+###
+get http://localhost:7071/runtime/webhooks/durabletask/instances/
